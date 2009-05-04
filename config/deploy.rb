@@ -1,5 +1,5 @@
 set :application, "railstutor"
-set :repository,  "git@papaya.larkware.com:hardscapes.git"
+set :repository,  "git@papaya.larkware.com:railstutor.git"
 set :user, "webadmin"
 set :deploy_via, :copy
 set :scm, :git
