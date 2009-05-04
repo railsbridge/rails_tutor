@@ -1,0 +1,97 @@
+/* @group Generic Styles */
+
+body, p, h1, h2, div {
+	font-family: Helvetica;
+	color: black;
+}
+
+a {
+	color: #0044f4;
+}
+
+body {
+	background-color: #0044f4;
+	color: black;
+}
+
+.clear {
+	clear: both;
+}
+
+/* @end */
+
+/* @group Overall Layout */
+
+#content_wrapper {
+	width: 900px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+/* @end */
+
+/* @group Home Page */
+
+#home_page_left {
+	width: 500px;
+	float: left;
+}
+
+.home_image {
+	float: left;
+	padding-right: 5px;
+}
+
+#home_page_right {
+	width: 350px;
+	float: right;
+	background-color: linen;
+	padding: 5px;
+	font-size: small;
+}
+
+#home_page_right h1 {
+	font-weight: bold;
+	text-align: center;
+	font-size: medium;
+}
+
+#home_page_right ol {
+	margin-left: 0px;
+}
+
+#home_page_right ol li {
+	list-style-type: upper-roman;
+}
+
+#home_page_right ol li ol {
+}
+
+#home_page_right ol li ol li {
+	list-style-type: upper-alpha;
+}
+
+#home_page_right ol li ol li ol li {
+	list-style-type: lower-roman;
+}
+
+#home_page_right ol li ol li ol li {
+	list-style-type: lower-roman;
+}
+
+#team_list {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#team_list_heading {
+	font-weight: bold;
+	font-size: larger;
+	text-decoration: underline;
+	margin-bottom: 15px;
+}
+
+/* @end */

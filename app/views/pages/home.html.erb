@@ -1,0 +1,122 @@
+<div id="home_page_left">
+	<%= image_tag('Rails-Tutor-Logo.jpg', :alt => 'Rails Tutor') %><br />
+	<br />
+	Welcome to Rails Tutor, a project conceived and sponsored by members of <%= link_to 'RailsBridge', 'http://www.railsbridge.com' %>.<br />
+	<br />
+	<%= image_tag('what.jpg', :alt => 'What', :class => 'home_image') %>This site is intended to be a repository for absolute beginner Rails courseware. Our goal is to help those with interest in programming but with no particular education or training in software development become contributing members of the Ruby on Rails community.<br />
+	<br />
+	<%= image_tag('why.jpg', :alt => 'What', :class => 'home_image') %>There is plenty of material out there for the experienced developer to make the leap from another language to Ruby on Rails, but virtually nothing to help someone make Ruby on Rails their <b>first</b> programming platform. So in keeping with the <%= link_to 'guidelines of the RailsBridge effort', 'http://www.railsbridge.com' %> to "..(b)ridge the gap from aspiring developer to contributing community member, through mentoring, teaching, and writing," we humbly present <b><i>The Complete Beginner's Guide to Ruby on Rails</i></b>.
+
+	<div id="team_list">
+		<%= content_tag(:div, 'Current Team Members:', :id => 'team_list_heading') %>
+		<%= mail_to 'douglas@theros.info', 'Douglas Campos' %><br />
+		<%= mail_to 'colin.t.curtin@gmail.com', 'Colin Curtin' %><br />
+		<%= mail_to 'edavis@littlestreamsoftware.com', 'Eric David' %><br />
+		<%= mail_to 'mail@hectorsq.com', 'Hector' %><br />
+		<%= mail_to 'bphogan@gmail.com', 'Brian Hogan' %><br />
+		<%= mail_to 'c.pecchia@gmail.com', 'Carlo Pecchia' %><br />
+		<%= mail_to 'aaron@quirkey.com', 'Aaron Quint' %><br />
+		<%= mail_to 'reid@cs.utoronto.ca', 'Karen Reid' %><br />
+		<%= mail_to 'rpatrickripley@gmail.com', 'Ryan Ripley' %><br />
+		<%= mail_to 'peter.szinek@gmail.com', 'Peter Szinek' %>
+	</div>
+
+	This courseware is still under development, and we welcome those experienced developers who want to contribute. We need writers, editors, and technical editors. If you want to participate, please contact the program coordinator, <%= mail_to 'dana@sterlingrosedesign.com', 'Dana Jones' %>.
+</div>
+<div id="home_page_right">
+	<h1>Proposed Courseware</h1>
+	
+	<ol>
+		<li>HTML
+		<ol>
+			<li>Basic Page Structure and Major Elements (&lt;html&gt;, &lt;head&gt;, &lt;body&gt;, &lt;title&gt;, &lt;p&gt;, &lt;meta&gt;, &lt;h1..4&gt;)</li>
+			<li>Hyperlinking (first Rails tag - <strong>link_to</strong>)</li>
+			<li>Inserting Images</li>
+		</ol>
+		</li>
+		<li>CSS
+		<ol>
+			<li>Intro to Styling Elements - in-line vs. CSS</li>
+			<li>Inheritance</li>
+			<li>Major Style Groups (based on the groups used by CSSEdit)
+			<ol>
+				<li>Fonts &amp; Colors</li>
+				<li>Text</li>
+				<li>Backgrounds</li>
+				<li>Dimensions</li>
+				<li>Position &amp; Page Flow</li>
+				<li>Borders</li>
+				<li>Bullets &amp; Other</li>
+			</ol>
+			</li>
+		</ol>
+		</li>
+		<li>Javascript (Prototype)
+		<ol>
+			<li>What is a script?</li>
+			<li>DOM</li>
+			<li>Selecting an object</li>
+			<li>Basic actions to take on an object (mouseover, change styles/values, effects)</li>
+			<li>Conditional statements</li>
+		</ol>
+		</li>
+		<li>Basic Programming Concepts
+		<ol>
+			<li>OOP Intro</li>
+			<li>Values and Variables</li>
+		</ol>
+		</li>
+		<li>Basic Rails Concepts
+		<ol>
+			<li>Installation</li>
+			<li>MVC</li>
+			<li>Associations</li>
+			<li>Routing</li>
+			<li>Scaffolding</li>
+			<li>Forms</li>
+		</ol>
+		</li>
+		<li>Moving Toward Better Code
+		<ol>
+			<li>Partials (DRY)</li>
+			<li>Validations</li>
+			<li>Class Methods</li>
+			<li>Filters</li>
+			<li>ActionMailer</li>
+			<li>jQuery</li>
+		</ol>
+		</li>
+		<li>Plugins / Gems
+		<ol>
+			<li>What is a plugin? What is a gem? Why use them?</li>
+			<li>Common-Use Plugins and Gems
+			<ol>
+				<li>Authentication and Authorization</li>
+				<li>CMS</li>
+				<li>File Attachments</li>
+				<li>Searching</li>
+				<li>PDFs</li>
+				<li>Testing</li>
+				<li>Pagination</li>
+			</ol>
+			</li>
+		</ol>
+		</li>
+		<li>Advanced Rails Concepts
+		<ol>
+			<li>Default Scope, Named Scope</li>
+			<li>Engines and Templates</li>
+			<li>Versioning/Edge</li>
+			<li>Database/Platform Support</li>
+			<li>Deployment</li>
+			<li>Testing</li>
+			<li>Polymorphic relationships and Single Table Inheritance</li>
+			<li>Lazy loading vs. eager loading</li>
+			<li>Version repositories</li>
+			<li>Security</li>
+			<li>Hosting</li>
+		</ol>
+		</li>
+	</ol>
+</div>
+<div class="clear"></div>
