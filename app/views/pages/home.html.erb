@@ -1,14 +1,15 @@
 <div id="home_page_left">
 	<%= image_tag('Rails-Tutor-Logo.jpg', :alt => 'Rails Tutor') %><br />
 	<br />
-	Welcome to Rails Tutor, a project conceived and sponsored by members of <%= link_to 'RailsBridge', 'http://www.railsbridge.com' %>.<br />
+	Welcome to Rails Tutor, a project conceived and sponsored by members of <%= link_to 'RailsBridge', 'http://www.railsbridge.org' %>.<br />
 	<br />
 	<%= image_tag('what.jpg', :alt => 'What', :class => 'home_image') %>This site is intended to be a repository for absolute beginner Rails courseware. Our goal is to help those with interest in programming but with no particular education or training in software development become contributing members of the Ruby on Rails community.<br />
 	<br />
-	<%= image_tag('why.jpg', :alt => 'What', :class => 'home_image') %>There is plenty of material out there for the experienced developer to make the leap from another language to Ruby on Rails, but virtually nothing to help someone make Ruby on Rails their <b>first</b> programming platform. So in keeping with the <%= link_to 'guidelines of the RailsBridge effort', 'http://www.railsbridge.com' %> to "..(b)ridge the gap from aspiring developer to contributing community member, through mentoring, teaching, and writing," we humbly present <b><i>The Complete Beginner's Guide to Ruby on Rails</i></b>.
+	<%= image_tag('why.jpg', :alt => 'What', :class => 'home_image') %>There is plenty of material out there for the experienced developer to make the leap from another language to Ruby on Rails, but virtually nothing to help someone make Ruby on Rails their <b>first</b> programming platform. So in keeping with the <%= link_to 'guidelines of the RailsBridge effort', 'http://www.railsbridge.org' %> to "..(b)ridge the gap from aspiring developer to contributing community member, through mentoring, teaching, and writing," we humbly present <b><i>The Complete Beginner's Guide to Ruby on Rails</i></b>.
 
 	<div id="team_list">
 		<%= content_tag(:div, 'Current Team Members:', :id => 'team_list_heading') %>
+		<%= mail_to 'hardbap@gmail.com', 'Mike Breen' %><br />
 		<%= mail_to 'douglas@theros.info', 'Douglas Campos' %><br />
 		<%= mail_to 'colin.t.curtin@gmail.com', 'Colin Curtin' %><br />
 		<%= mail_to 'edavis@littlestreamsoftware.com', 'Eric Davis' %><br />
