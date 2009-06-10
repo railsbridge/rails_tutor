@@ -18,7 +18,7 @@ role :app, "72.249.191.152"
 role :db,  "72.249.191.152", :primary => true
 
 set :keep_releases, 6
-after "deploy:update", "deploy:cleanup"
+after "deploy:update", "deploy:link_config"
 
 namespace :deploy do
   desc "Restarting mod_rails with restart.txt"
@@ -26,6 +26,11 @@ namespace :deploy do
     run "touch #{current_path}/tmp/restart.txt"
   end
 
+  desc "Re-link config files"
+  task :link_config, :roles => :app do
+    run "ln -nsf #{shared_path}/config/database.yml #{current_path}/config/database.yml"
+  end
+  
   [:start, :stop].each do |t|
     desc "#{t} task is a no-op with mod_rails"
     task t, :roles => :app do ; end
